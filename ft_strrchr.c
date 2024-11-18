@@ -12,7 +12,17 @@
 
 #include "libft.h"
 
-//Is used to find the last occurrence of a specified character in a string.
+/// @brief Locates the last occurrence of a character in a string.
+///
+/// This function searches the string `str` for the last occurrence of the
+/// character `c` (treated as unsigned char). The search starts from the
+/// end of the string and moves backward.
+///
+/// @param str The string to search.
+/// @param c The character to locate in the string.
+///
+/// @return A pointer to the last occurrence of `c` in `str`, or NULL if
+///         `c` is not found.
 char	*ft_strrchr(const char *str, int c)
 {
 	int	len;

@@ -20,6 +20,11 @@ int	is_space(char c)
 		return (0);
 }
 
+/// @brief It converts a string representing a number
+/// to its integer equivalent.
+/// @param str A pointer to a null-terminated string that
+/// contains the number to be converted.
+/// @return The function returns the integer value of the string.
 int	ft_atoi(const char *str)
 {
 	int	i;

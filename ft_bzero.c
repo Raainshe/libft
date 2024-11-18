@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-//Is used to set a block of memory to zero
+/// @brief is used to set a memory area to zero.
+/// @param s A pointer to the starting address of 
+/// the memory area to be filled with zeroes.
+/// @param n The number of bytes to be set to zero.
 void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;

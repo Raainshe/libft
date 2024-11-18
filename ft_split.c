@@ -95,7 +95,17 @@ int	split_helper(const char *s, char c, char **split)
 	return (1);
 }
 
-//returns array of strings split by the characters given to use to split
+/// @brief Splits a string into an array of substrings.
+///
+/// This function splits the string `s` into an array of substrings using
+/// the delimiter `c`. Each substring is stored in an array, and the array
+/// is terminated by a NULL pointer.
+///
+/// @param s The string to split.
+/// @param c The delimiter character used to split the string.
+///
+/// @return An array of substrings. If memory allocation fails or the input
+///         string is NULL, it returns NULL.
 char	**ft_split(const char *s, char c)
 {
 	size_t	s_count;

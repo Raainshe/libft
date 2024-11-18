@@ -10,7 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//checks if the peram entered is printable
+/// @brief is used to check whether a given character is printable, including
+/// space. Printable characters are those that occupy visible space on
+/// a display.
+/// @param c The character to be checked, typically passed as an int value.
+/// The character should be representable as an unsigned char or the value
+/// of EOF.
+/// @return It returns 1 if true and 0 if false.
 int	ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')

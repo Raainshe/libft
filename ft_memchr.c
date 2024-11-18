@@ -12,8 +12,19 @@
 
 #include "libft.h"
 
-//Is used to search for the first occurrence of a
-//specific byte character within a block of memory.
+/// @brief Locates the first occurrence of a byte in a block of memory.
+///
+/// This function searches the memory block `ptr` for the first occurrence of
+/// the byte `c` (treated as unsigned char). The search is performed up to
+/// `num` bytes. If the byte is found, a pointer to it is returned; otherwise,
+/// NULL is returned.
+///
+/// @param ptr A pointer to the memory block to search.
+/// @param c The byte to search for in the memory block.
+/// @param num The number of bytes to examine in the memory block.
+///
+/// @return A pointer to the first occurrence of `c` in `ptr`, or NULL if
+///         `c` is not found within the first `num` bytes.
 void	*ft_memchr(const void *ptr, int c, size_t num)
 {
 	unsigned char	value;

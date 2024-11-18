@@ -12,7 +12,16 @@
 
 #include "libft.h"
 
-//Returns the length of a string
+/// @brief Computes the length of a null-terminated string.
+///
+/// This function calculates the number of characters in the string `c` up to
+/// (but not including) the null terminator. It does not include the null
+/// terminator in the count.
+///
+/// @param c The string whose length is to be calculated.
+///
+/// @return The number of characters in the string `c` excluding the null
+///         terminator.
 size_t	ft_strlen(const char *c)
 {
 	size_t	i;

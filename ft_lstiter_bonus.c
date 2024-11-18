@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/// @brief Iterates over a linked list and applies a function to each element.
+///
+/// This function traverses the list from the head to the last element,
+/// applying the provided function `f` to the content of each node.
+///
+/// @param lst A pointer to the head of the linked list. The function will
+///            iterate through all elements of the list.
+/// @param f A function pointer to the function that will be applied to the
+///          content of each element in the list.
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst != NULL)

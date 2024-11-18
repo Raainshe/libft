@@ -12,7 +12,18 @@
 
 #include "libft.h"
 
-//is used to copy a block of memory from one location to another.
+/// @brief Copies a block of memory.
+///
+/// This function copies `n` bytes from the memory area `src` to the memory
+/// area `dest`. The memory areas must not overlap. If they do, the behavior
+/// is undefined.
+///
+/// @param dest A pointer to the destination memory block where the content
+///            will be copied.
+/// @param src A pointer to the source memory block to copy from.
+/// @param n The number of bytes to copy from `src` to `dest`.
+///
+/// @return A pointer to the destination memory block `dest`.
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t		i;

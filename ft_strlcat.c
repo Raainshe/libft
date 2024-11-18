@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/// @brief Appends a string to another, ensuring null-termination.
+///
+/// This function appends the string `src` to the string `dest`, ensuring
+/// that the total length of the resulting string does not exceed `size - 1`.
+/// It always null-terminates the result, provided there is enough space.
+///
+/// @param dest The destination string to append to.
+/// @param src The source string to append.
+/// @param dest_size The size of the destination buffer, including space for
+///                  the null terminator.
+///
+/// @return The total length of the string it tried to create, i.e., the
+///         initial length of `dst` plus the length of `src`.
 size_t	ft_strlcat(char *dest, char *src, size_t dest_size)
 {
 	size_t	i;

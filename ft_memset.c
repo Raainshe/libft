@@ -12,7 +12,17 @@
 
 #include "libft.h"
 
-//Is used to fill a block of memory with a particular value.
+/// @brief Sets a block of memory to a specified value.
+///
+/// This function fills the first `len` bytes of the memory area `str` with the
+/// constant byte `c`. The byte is interpreted as an unsigned char.
+///
+/// @param str A pointer to the memory block to set.
+/// @param c The value to set each byte of the memory block to. It is passed as
+///          an int, but is converted to an unsigned char.
+/// @param len The number of bytes to set in the memory block.
+///
+/// @return A pointer to the memory block `str`.
 void	*ft_memset(void *str, int c, size_t len)
 {
 	size_t			i;

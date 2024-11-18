@@ -12,9 +12,20 @@
 
 #include "libft.h"
 
-//is used to compare two blocks of memory.
-//It checks whether the two memory blocks are identical or different, if diff
-//It indicates which block is lexicographically greater.
+/// @brief Compares two blocks of memory.
+///
+/// This function compares the first `n` bytes of the memory blocks `s1`
+/// and `s2`. It returns an integer less than, equal to, or greater than zero,
+/// depending on whether the first `n` bytes of `s1` are less than, equal to,
+/// or greater than those of `s2`.
+///
+/// @param s1 A pointer to the first memory block to compare.
+/// @param s2 A pointer to the second memory block to compare.
+/// @param n The number of bytes to compare.
+///
+/// @return An integer less than, equal to, or greater than zero if the
+///         first `n` bytes of `s1` are found to be less than, equal to,
+///         or greater than those of `s2`.
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;

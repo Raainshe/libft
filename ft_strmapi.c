@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/// @brief Applies a function to each character of a string with its index.
+///
+/// This function iterates over the string `s`, applying the function `f` to
+/// each character. The function also passes the index of each character as
+/// an argument, allowing for index-aware transformations.
+///
+/// @param s The string to iterate over.
+/// @param f The function to apply to each character of the string. It takes
+///          two arguments: the character and its index in the string.
+///
+/// @return A new string with the results of applying `f` to each character,
+///         or NULL if memory allocation fails.
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;

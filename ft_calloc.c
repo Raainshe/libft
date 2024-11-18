@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/// @brief It is used to allocate memory for an array
+/// of elements, initialize all bytes in the allocated
+/// storage to zero, and return a pointer to the memory.
+/// @param num The number of elements to allocate.
+/// @param size The size of each element in bytes.
+/// @return The function returns a pointer to the
+/// allocated memory, which is suitably aligned for
+/// any built-in type. f the memory allocation fails,
+/// it returns NULL.
 void	*ft_calloc(size_t num, size_t size)
 {
 	char	*mem;

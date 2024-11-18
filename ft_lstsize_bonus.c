@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/// @brief Returns the size of a linked list.
+///
+/// This function traverses the linked list from the head to the last element
+/// and counts the number of elements in the list.
+///
+/// @param lst A pointer to the head of the linked list. The function will
+///            iterate through the list to count the number of elements.
+///
+/// @return The number of elements in the linked list.
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

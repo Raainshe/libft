@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/// @brief Writes a character to the specified file descriptor.
+///
+/// This function writes the character `c` to the file or output stream
+/// represented by the file descriptor `fd`. It does not add a newline.
+///
+/// @param c The character to write.
+/// @param fd The file descriptor where the character will be written. It
+///           could represent standard output (1), standard error (2), etc.
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

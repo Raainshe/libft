@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/// @brief Applies a function to each character of a string, with its index.
+///
+/// This function iterates over the string `s`, applying the function `f` to
+/// each character. The function also passes the index of each character as
+/// an argument, allowing for index-aware processing.
+///
+/// @param s The string to iterate over.
+/// @param f The function to apply to each character of the string. It takes
+///          two arguments: the character and its index in the string.
+///
+/// @return None.
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;

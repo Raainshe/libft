@@ -12,7 +12,16 @@
 
 #include "libft.h"
 
-//returns a duplicate of the string
+/// @brief Duplicates a string by allocating memory for a new copy.
+///
+/// This function allocates memory for a new string and copies the content of
+/// the string `str` into it. The new string is null-terminated. If memory
+/// allocation fails, NULL is returned.
+///
+/// @param str The string to duplicate.
+///
+/// @return A pointer to the newly allocated string, or NULL if memory
+///         allocation fails.
 char	*ft_strdup(const char *str)
 {
 	size_t	s_len;

@@ -12,14 +12,19 @@
 
 #include "libft.h"
 
-//Allocates (with malloc(3)) and returns a substring
-//from the string ’s’.
-//The substring begins at index ’start’ and is of
-//maximum size ’len’.
-//s: The string from which to create the substring.
-//start: The start index of the substring in the
-//string ’s’.
-//len: The maximum length of the substring
+/// @brief Extracts a substring from a string.
+///
+/// This function creates a new string starting from the index `start`
+/// in the string `s` and extracts `len` characters. The result is
+/// null-terminated. If `start` is out of range, or if memory allocation
+/// fails, it returns NULL.
+///
+/// @param s The string to extract the substring from.
+/// @param start The starting index in the string `s`.
+/// @param len The maximum number of characters to include in the substring.
+///
+/// @return A new string containing the extracted substring, or NULL if
+///         memory allocation fails or `start` is out of range.
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;

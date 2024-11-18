@@ -22,7 +22,17 @@ void	reverse_print(char *snum, int len, int fd)
 	}
 }
 
-//Writes the numbers inputed on the console
+/// @brief Writes an integer to the specified file descriptor.
+///
+/// This function converts the integer `n` to its string representation and
+/// writes it to the file or output stream represented by the file descriptor
+/// `fd`. It does not include any newline characters.
+///
+/// @param n The integer to write.
+/// @param fd The file descriptor where the integer will be written. It could
+///           represent standard output (1), standard error (2), etc.
+///
+/// @return None.
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	snum[12];

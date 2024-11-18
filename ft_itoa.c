@@ -27,6 +27,11 @@ int	get_num_len(int n)
 	return (len);
 }
 
+/// @brief stands for "integer to ASCII." It converts an integer value to
+/// a null-terminated string
+/// @param n The integer value to be converted
+/// @return The function returns a pointer to the resulting
+/// null-terminated string,
 char	*ft_itoa(int n)
 {
 	long	i;

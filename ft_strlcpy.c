@@ -25,6 +25,21 @@ size_t	str_count(char *src)
 	return (i);
 }
 
+/// @brief Copies a string to another, ensuring null-termination.
+///
+/// This function copies up to `dst_size - 1` characters from the string `src`
+/// to `dest`, and guarantees that `dst` is null-terminated. If the length of
+/// `src` is greater than or equal to `dst_size`, the copied string will be
+/// truncated, and the null terminator will be placed at the end of `dst`.
+///
+/// @param dest The destination buffer where the string will be copied.
+/// @param src The source string to copy.
+/// @param dst_size The size of the destination buffer, including space for the
+///             null terminator.
+///
+/// @return The total length of the string it tried to create, i.e., the length
+///         of `src`. If the return value is greater than or equal to
+///         `dst_size`, truncation occurred.
 size_t	ft_strlcpy(char *dest, const char *src, size_t dst_size)
 {
 	size_t	i;

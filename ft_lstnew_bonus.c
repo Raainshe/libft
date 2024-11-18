@@ -12,7 +12,18 @@
 
 #include "libft.h"
 
-//creates a new list item
+/// @brief Creates a new element for a linked list.
+///
+/// This function allocates memory for a new list element and initializes
+/// its content to the provided value. The `next` pointer of the new element
+/// is set to NULL.
+///
+/// @param content A pointer to the content to be stored in the new element.
+///                The function does not copy the content, only stores the
+///                pointer.
+///
+/// @return A pointer to the newly created element, or NULL if memory
+///         allocation fails.
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_list;

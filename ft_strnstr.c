@@ -13,6 +13,19 @@
 #include "libft.h"
 #include <stdio.h>
 
+/// @brief Locates the first occurrence of a substring in a string.
+///
+/// This function finds the first occurrence of the substring `needle`
+/// within the string `haystack`, searching at most `len` characters. It
+/// returns a pointer to the beginning of the found substring, or NULL if
+/// the substring is not found within the first `len` characters.
+///
+/// @param haystack The string to search within.
+/// @param needle The substring to locate.
+/// @param len The maximum number of characters to search.
+///
+/// @return A pointer to the first occurrence of `needle` in `haystack`,
+///         or NULL if `needle` is not found within the first `len` characters.
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;

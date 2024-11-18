@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-//returns 1 if they match and 0 if not
+// returns 1 if they match and 0 if not
 int	check_char(char c, char *str)
 {
 	size_t	i;
@@ -27,7 +27,17 @@ int	check_char(char c, char *str)
 	return (0);
 }
 
-//removes specified characters from beginning and end of given string.
+/// @brief Removes leading and trailing characters from a set in a string.
+///
+/// This function trims the string `s1` by removing any characters found in
+/// the `set` string from both the beginning and the end. The result is
+/// stored in a new string, which is null-terminated.
+///
+/// @param s1 The string to trim.
+/// @param set The set of characters to remove from the beginning and end of `s1`.
+///
+/// @return A new string with the specified characters removed, or NULL if
+///         memory allocation fails.
 char	*ft_strtrim(const char *s1, char const *set)
 {
 	char	*trimmed;
