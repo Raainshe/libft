@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:40:41 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/10/21 17:12:18 by rmakoni          ###   ########.fr       */
+/*   Updated: 2024/11/25 12:20:06 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ int	check_char(char c, char *str)
 /// stored in a new string, which is null-terminated.
 ///
 /// @param s1 The string to trim.
-/// @param set The set of characters to remove from the beginning and end of `s1`.
+/// @param set The set of characters to remove from the beginning and
+/// end of `s1`.
 ///
 /// @return A new string with the specified characters removed, or NULL if
 ///         memory allocation fails.
