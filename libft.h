@@ -6,7 +6,7 @@
 /*   By: ryan <ryan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:05:55 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/11/26 23:49:42 by ryan             ###   ########.fr       */
+/*   Updated: 2024/11/27 00:06:27 by ryan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int     ft_tolower(int c);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
 int     ft_memcmp(const void *s1, const void *s2, size_t n);
 int     ft_atoi(const char *str);
-int     ft_lstsize(t_list *lst);
+
 
 /* SIZE_T Return Functions */
 size_t  ft_strlen(const char *c);
@@ -85,12 +85,13 @@ typedef struct s_list
 t_list  *ft_lstnew(void *content);
 t_list  *ft_lstlast(t_list *lst);
 t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
+int     ft_lstsize(t_list *lst);
 /* VOID Return List Functions */
 void    ft_lstadd_front(t_list **lst, t_list *new);
 void    ft_lstadd_back(t_list **lst, t_list *new);
 void    ft_lstdelone(t_list *lst, void (*del)(void *));
 void    ft_lstclear(t_list **lst, void (*del)(void *));
 void    ft_lstiter(t_list *lst, void (*f)(void *));
+
 
 #endif
