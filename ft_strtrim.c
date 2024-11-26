@@ -34,7 +34,8 @@ int	check_char(char c, char *str)
 /// stored in a new string, which is null-terminated.
 ///
 /// @param s1 The string to trim.
-/// @param set The set of characters to remove from the beginning and end of `s1`.
+/// @param set The set of characters to remove from the beginning and end
+/// 		    of `s1`.
 ///
 /// @return A new string with the specified characters removed, or NULL if
 ///         memory allocation fails.
