@@ -52,7 +52,15 @@ SRC_FILES = ft_atoi.c \
             ft_lstlast_bonus.c \
             ft_lstmap_bonus.c \
             ft_lstnew_bonus.c \
-            ft_lstsize_bonus.c
+            ft_lstsize_bonus.c\
+            ft_gethex.c\
+			ft_printf.c\
+			ft_putchar_fdp.c\
+			ft_putnbr_fdp.c\
+			ft_putstr_fdp.c\
+			ft_toupperp.c\
+			ft_print_unsigned.c\
+			ft_get_address.c
 
 # Add full paths for source and object files
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
