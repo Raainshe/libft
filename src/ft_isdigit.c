@@ -17,7 +17,7 @@
 /// @return It returns 1 if true and 0 if false.
 int	ft_isdigit(int num)
 {
-	if (num >= '0' & num <= '9')
+	if (num >= '0' && num <= '9')
 		return (1);
 	else
 		return (0);
