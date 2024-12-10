@@ -6,7 +6,7 @@
 /*   By: ryan <ryan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:05:55 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/11/27 00:06:27 by ryan             ###   ########.fr       */
+/*   Updated: 2024/11/27 23:35:47 by ryan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,11 +87,11 @@ t_list  *ft_lstlast(t_list *lst);
 t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int     ft_lstsize(t_list *lst);
 /* VOID Return List Functions */
-void    ft_lstadd_front(t_list **lst, t_list *new);
+void    ft_lstadd_front(t_list **lst, t_list *new);\
 void    ft_lstadd_back(t_list **lst, t_list *new);
 void    ft_lstdelone(t_list *lst, void (*del)(void *));
 void    ft_lstclear(t_list **lst, void (*del)(void *));
-void    ft_lstiter(t_list *lst, void (*f)(void *));
+void ft_lstiter(t_list *lst, void (*f)(void *));
 
 
 #endif
