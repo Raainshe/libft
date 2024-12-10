@@ -6,7 +6,7 @@
 /*   By: ryan <ryan@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:08:02 by ryan              #+#    #+#             */
-/*   Updated: 2024/12/10 13:08:37 by ryan             ###   ########.fr       */
+/*   Updated: 2024/12/10 13:33:01 by ryan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,10 @@ int	ft_sqrt(int nb)
 			return (is_factor);
 		}
 		is_factor++;
+	}
+	if (is_factor * is_factor > nb)
+	{
+		return (is_factor -1);
 	}
 	return (0);
 }
