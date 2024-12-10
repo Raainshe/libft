@@ -5,12 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 13:05:55 by rmakoni           #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/11/27 23:35:47 by ryan             ###   ########.fr       */
-=======
-/*   Updated: 2024/11/27 14:49:05 by rmakoni          ###   ########.fr       */
->>>>>>> 5fe6a506b955868e3e5ee363fb64014d07659e6a
+/*   Created: 2024/12/10 13:36:36 by rmakoni           #+#    #+#             */
+/*   Updated: 2024/12/10 13:41:44 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,19 +88,10 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 int					ft_lstsize(t_list *lst);
 /* VOID Return List Functions */
-<<<<<<< HEAD
-void    ft_lstadd_front(t_list **lst, t_list *new);\
-void    ft_lstadd_back(t_list **lst, t_list *new);
-void    ft_lstdelone(t_list *lst, void (*del)(void *));
-void    ft_lstclear(t_list **lst, void (*del)(void *));
-void ft_lstiter(t_list *lst, void (*f)(void *));
-
-=======
 void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
->>>>>>> 5fe6a506b955868e3e5ee363fb64014d07659e6a
 
 #endif
