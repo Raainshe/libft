@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:36:36 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/12/17 12:41:59 by rmakoni          ###   ########.fr       */
+/*   Updated: 2024/12/18 12:40:15 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int					ft_str_is_numeric(char *str);
 size_t				ft_strlen(const char *c);
 size_t				ft_strlcpy(char *dest, const char *src, size_t dst_size);
 size_t				ft_strlcat(char *dest, char *src, size_t dest_size);
+size_t				ft_arrlen(char **arr);
 
 /* CHAR* Return Functions */
 // String Searches
