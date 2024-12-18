@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 12:33:22 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/12/18 12:37:40 by rmakoni          ###   ########.fr       */
+/*   Updated: 2024/12/18 12:43:12 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 * Example:
 * char *arr[] = {"hello", "world", NULL};  // returns 2
 */
-int	ft_arrlen(char **arr)
+size_t	ft_arrlen(char **arr)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (arr[i] != NULL)
