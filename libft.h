@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 13:36:36 by rmakoni           #+#    #+#             */
-/*   Updated: 2024/12/18 12:40:15 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/01/15 14:11:24 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char				*ft_substr(const char *s, unsigned int start, size_t len);
 char				*ft_strdup(const char *str);
 char				*ft_strtrim(const char *s1, char const *set);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char				*ft_strupper(char *str);
+char				*ft_strlower(char *str);
 char				*ft_itoa(int n);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				**ft_split(const char *s, char c);
