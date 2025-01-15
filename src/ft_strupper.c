@@ -6,12 +6,22 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 14:04:50 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/01/15 14:09:48 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/01/15 14:21:45 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+* Creates a new string with all characters converted to uppercase.
+* Original string remains unchanged.
+*
+* @param str String to convert (can be NULL)
+* @return New malloc'd string in uppercase, or NULL if str is NULL/malloc fails
+*
+* Example:
+* ft_strupper("Hello") // returns "HELLO"
+*/
 char	*ft_strupper(char *str)
 {
 	size_t	len;
