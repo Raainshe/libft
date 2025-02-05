@@ -6,7 +6,7 @@
 /*   By: rmakoni <rmakoni@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:05:55 by rmakoni           #+#    #+#             */
-/*   Updated: 2025/02/05 10:43:57 by rmakoni          ###   ########.fr       */
+/*   Updated: 2025/02/05 10:50:32 by rmakoni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,13 @@ int					ft_tolower(int c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_atoi(const char *str);
-double				ft_atod(const char *str);
+int					ft_str_is_numeric(char *str);
 
 /* SIZE_T Return Functions */
 size_t				ft_strlen(const char *c);
 size_t				ft_strlcpy(char *dest, const char *src, size_t dst_size);
 size_t				ft_strlcat(char *dest, char *src, size_t dest_size);
+size_t				ft_arrlen(char **arr);
 
 /* CHAR* Return Functions */
 // String Searches
@@ -51,6 +52,8 @@ char				*ft_substr(const char *s, unsigned int start, size_t len);
 char				*ft_strdup(const char *str);
 char				*ft_strtrim(const char *s1, char const *set);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char				*ft_strupper(char *str);
+char				*ft_strlower(char *str);
 char				*ft_itoa(int n);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				**ft_split(const char *s, char c);
@@ -89,7 +92,6 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 int					ft_lstsize(t_list *lst);
 /* VOID Return List Functions */
-
 void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
