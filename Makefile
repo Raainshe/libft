@@ -63,7 +63,7 @@ SRC_FILES = ft_atoi.c \
 			ft_toupperp.c\
 			ft_print_unsigned.c\
 			ft_get_address.c \
-            ft_atod.c
+            ft_atod.c\
 			ft_get_address.c\
             ft_str_is_numeric.c\
             ft_arraylen.c\
